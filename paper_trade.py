@@ -468,7 +468,7 @@ class MLTrader:
 
     def send_discord_embed(self, title, description, color, fields=None):
         if not config.DISCORD_WEBHOOK_URL: return
-        embed = {"title": title, "description": description, "color": color, "timestamp": datetime.datetime.utcnow().isoformat(), "footer": {"text": "Code Red | Quant V2"}}
+        embed = {"title": title, "description": description, "color": color, "timestamp": datetime.datetime.utcnow().isoformat(), "footer": {"text": "ML Trader | Quant V2"}}
         if fields: embed["fields"] = fields
         try: requests.post(config.DISCORD_WEBHOOK_URL, json={"embeds": [embed]})
         except: pass
