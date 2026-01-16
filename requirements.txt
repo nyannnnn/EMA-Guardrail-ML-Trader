@@ -1,0 +1,5 @@
+pandas
+numpy
+ib_insync
+pyarrow
+fastparquet
